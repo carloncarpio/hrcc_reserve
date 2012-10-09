@@ -1,0 +1,7 @@
+.container{width:960px;margin:0 auto;}
+
+.dancer1, .dancer2, .props1, .props2 {width:40%;}
+.dancer2, .props2{float:right;margin-right:180px;}
+.dancer1, .props1{float:left;}
+
+.actions{clear:both;}

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  comp_name: MyString
+  comp_res: MyString
+  comp_res: 
+  comp_tech_rep: MyString
+  comp_tech_num: MyString
+
+two:
+  comp_name: MyString
+  comp_res: MyString
+  comp_res: 
+  comp_tech_rep: MyString
+  comp_tech_num: MyString

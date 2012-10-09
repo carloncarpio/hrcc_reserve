@@ -1,0 +1,306 @@
+<%= form_for(@comp_info) do |f| %>
+  <% if @comp_info.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@comp_info.errors.count, "error") %> prohibited this comp_info from being saved:</h2>
+
+      <ul>
+      <% @comp_info.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label "Company Name" %><br />
+    <%= f.text_field :comp_name %>
+  </div>
+  <div class="field">
+    <%= f.label "Company Representative" %><br />
+    <%= f.text_field :comp_res %>
+  </div>
+  <div class="field">
+    <%= f.label "Company Representative Contact" %><br />
+    <%= f.text_field :comp_res_numk %>
+  </div>
+  <div class="field">
+    <%= f.label :comp_tech_rep %><br />
+    <%= f.text_field :comp_tech_rep %>
+  </div>
+  <div class="field">
+    <%= f.label :comp_tech_num %><br />
+    <%= f.text_field :comp_tech_num %>
+  </div>
+
+  <h2>Dancers</h2>
+  <div class="dancer1">
+  <div class="field">
+    <%= f.label "Dancer #1" %>
+    <%= f.text_field :dancer1 %>
+  </div>
+  <div class="field">
+    <%= f.label "Dancer #2" %>
+    <%= f.text_field :dancer2 %>
+  </div>
+  <div class="field">
+    <%= f.label "Dancer #3" %>
+    <%= f.text_field :dancer3 %>
+  </div>
+  <div class="field">
+    <%= f.label "Dancer #4" %>
+    <%= f.text_field :dancer4 %>
+  </div>
+  <div class="field">
+    <%= f.label "Dancer #5" %>
+    <%= f.text_field :dancer5 %>
+  </div>
+    <div class="field">
+    <%= f.label "Dancer #6" %>
+    <%= f.text_field :dancer6 %>
+  </div>
+  <div class="field">
+    <%= f.label "Dancer #7" %>
+    <%= f.text_field :dancer7 %>
+  </div>
+  <div class="field">
+    <%= f.label "Dancer #8" %>
+    <%= f.text_field :dancer8 %>
+  </div>
+  <div class="field">
+    <%= f.label "Dancer #9" %>
+    <%= f.text_field :dancer9 %>
+  </div>
+  <div class="field">
+    <%= f.label "Dancer #10" %>
+    <%= f.text_field :dancer10 %>
+  </div>
+</div>
+
+<div class="dancer2">
+  <div class="field">
+    <%= f.label "Dancer #11" %>
+    <%= f.text_field :dancer11 %>
+  </div>
+  <div class="field">
+    <%= f.label "Dancer #12" %>
+    <%= f.text_field :dancer12 %>
+  </div>
+  <div class="field">
+    <%= f.label "Dancer #13" %>
+    <%= f.text_field :dancer13 %>
+  </div>
+  <div class="field">
+    <%= f.label "Dancer #14" %>
+    <%= f.text_field :dancer14 %>
+  </div>
+  <div class="field">
+    <%= f.label "Dancer #15" %>
+    <%= f.text_field :dancer15 %>
+  </div>
+    <div class="field">
+    <%= f.label "Dancer #16" %>
+    <%= f.text_field :dancer16 %>
+  </div>
+  <div class="field">
+    <%= f.label "Dancer #17" %>
+    <%= f.text_field :dancer17 %>
+  </div>
+  <div class="field">
+    <%= f.label "Dancer #18" %>
+    <%= f.text_field :dancer18 %>
+  </div>
+  <div class="field">
+    <%= f.label "Dancer #19" %>
+    <%= f.text_field :dancer19 %>
+  </div>
+  <div class="field">
+    <%= f.label "Dancer #20" %>
+    <%= f.text_field :dancer20 %>
+  </div>
+</div>
+
+<h2>Number of Microphone</h2>
+  <div class="field">
+    <%= f.label "Microphones" %>
+    <%= f.text_field :mics %>
+  </div>
+
+
+<h2>Props Men</h2>
+  <div class="props1">
+  <div class="field">
+    <%= f.label "Props Men #1" %>
+    <%= f.text_field :propsmen1 %>
+  </div>
+   <div class="field">
+    <%= f.label "Props Men #2" %>
+    <%= f.text_field :propsmen2 %>
+  </div>
+   <div class="field">
+    <%= f.label "Props Men #3" %>
+    <%= f.text_field :propsmen3 %>
+  </div>
+</div>
+  <div class="props2">
+   <div class="field">
+    <%= f.label "Props Men #4" %>
+    <%= f.text_field :propsmen4 %>
+  </div>
+   <div class="field">
+    <%= f.label "Props Men #5" %>
+    <%= f.text_field :propsmen5 %>
+  </div>
+   <div class="field">
+    <%= f.label "Props Men #6" %>
+    <%= f.text_field :propsmen6 %>
+  </div>
+</div>
+
+<h2>Personal Assistant</h2>
+  <div class="field">
+    <%= f.label "PA #1" %>
+    <%= f.text_field :pa1 %>
+  </div>
+   <div class="field">
+    <%= f.label "PA #2" %>
+    <%= f.text_field :pa2 %>
+  </div>
+
+  <h2>Comments</h2>
+  <div class="field">
+
+    <%= f.text_area :comments %>
+  </div>
+
+  <h2>Time and Performance Requirement</h2>
+  <div class="props1">
+   <div class="field">
+    <%= f.label "Time #1" %>
+    <%= f.text_field :time1 %>
+  </div>
+     <div class="field">
+    <%= f.label "Time #2" %>
+    <%= f.text_field :time2 %>
+  </div>
+     <div class="field">
+    <%= f.label "Time #3" %>
+    <%= f.text_field :time3 %>
+  </div>
+     <div class="field">
+    <%= f.label "Time #4" %>
+    <%= f.text_field :time4 %>
+  </div>
+     <div class="field">
+    <%= f.label "Time #5" %>
+    <%= f.text_field :time5 %>
+  </div>
+   <div class="field">
+    <%= f.label "Time #6" %>
+    <%= f.text_field :time6 %>
+  </div>
+     <div class="field">
+    <%= f.label "Time #7" %>
+    <%= f.text_field :time7 %>
+  </div>
+     <div class="field">
+    <%= f.label "Time #8" %>
+    <%= f.text_field :time8 %>
+  </div>
+     <div class="field">
+    <%= f.label "Time #9" %>
+    <%= f.text_field :time9 %>
+  </div>
+     <div class="field">
+    <%= f.label "Time #10" %>
+    <%= f.text_field :time10 %>
+  </div>
+       <div class="field">
+    <%= f.label "Time #11" %>
+    <%= f.text_field :time11 %>
+  </div>
+     <div class="field">
+    <%= f.label "Time #12" %>
+    <%= f.text_field :time12 %>
+  </div>
+     <div class="field">
+    <%= f.label "Time #13" %>
+    <%= f.text_field :time13 %>
+  </div>
+     <div class="field">
+    <%= f.label "Time #14" %>
+    <%= f.text_field :time14 %>
+  </div>
+     <div class="field">
+    <%= f.label "Time #15" %>
+    <%= f.text_field :time15 %>
+  </div>
+</div>
+
+<div class="props2">
+
+   <div class="field">
+    <%= f.label "Time #16" %>
+    <%= f.text_field :time16 %>
+  </div>
+     <div class="field">
+    <%= f.label "Time #17" %>
+    <%= f.text_field :time17 %>
+  </div>
+     <div class="field">
+    <%= f.label "Time #18" %>
+    <%= f.text_field :time18 %>
+  </div>
+     <div class="field">
+    <%= f.label "Time #19" %>
+    <%= f.text_field :time19 %>
+  </div>
+     <div class="field">
+    <%= f.label "Time #20" %>
+    <%= f.text_field :time20 %>
+  </div>
+  <div class="field">
+    <%= f.label "Time #21" %>
+    <%= f.text_field :time21 %>
+  </div>
+     <div class="field">
+    <%= f.label "Time #22" %>
+    <%= f.text_field :time22 %>
+  </div>
+     <div class="field">
+    <%= f.label "Time #23" %>
+    <%= f.text_field :time23 %>
+  </div>
+     <div class="field">
+    <%= f.label "Time #24" %>
+    <%= f.text_field :time24 %>
+  </div>
+     <div class="field">
+    <%= f.label "Time #25" %>
+    <%= f.text_field :time25 %>
+  </div>
+   <div class="field">
+    <%= f.label "Time #26" %>
+    <%= f.text_field :time26 %>
+  </div>
+     <div class="field">
+    <%= f.label "Time #27" %>
+    <%= f.text_field :time27 %>
+  </div>
+     <div class="field">
+    <%= f.label "Time #28" %>
+    <%= f.text_field :time28 %>
+  </div>
+     <div class="field">
+    <%= f.label "Time #29" %>
+    <%= f.text_field :time29 %>
+  </div>
+     <div class="field">
+    <%= f.label "Time #30" %>
+    <%= f.text_field :time30 %>
+  </div>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

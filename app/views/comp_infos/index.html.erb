@@ -1,0 +1,23 @@
+<h1>List of Registered Company</h1>
+<hr />
+<table>
+  <tr>
+    <th>Company Name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @comp_infos.each do |comp_info| %>
+  <tr>
+    <td><%= link_to comp_info.comp_name , comp_info %></td>
+    <td></td>
+    <td><%= link_to 'Edit', edit_comp_info_path(comp_info) %></td>
+    <td><%= link_to 'Destroy', comp_info, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Company Reservation', new_comp_info_path %>
