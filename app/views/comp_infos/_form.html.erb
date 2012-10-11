@@ -20,15 +20,17 @@
     <%= f.text_field :comp_res %>
   </div>
   <div class="field">
-    <%= f.label "Company Representative Contact" %><br />
+    <%= f.label "Company Representative" %><br />
+    <%= f.label "Contact Number" %><br />
     <%= f.text_field :comp_res_numk %>
   </div>
   <div class="field">
-    <%= f.label :comp_tech_rep %><br />
+    <%= f.label "Technical Representative" %><br />
     <%= f.text_field :comp_tech_rep %>
   </div>
   <div class="field">
-    <%= f.label :comp_tech_num %><br />
+    <%= f.label "Technical Representative" %><br />
+    <%= f.label "Contact Number" %><br />
     <%= f.text_field :comp_tech_num %>
   </div>
 
@@ -74,9 +76,6 @@
     <%= f.label "Dancer #10" %>
     <%= f.text_field :dancer10 %>
   </div>
-</div>
-
-<div class="dancer2">
   <div class="field">
     <%= f.label "Dancer #11" %>
     <%= f.text_field :dancer11 %>
@@ -85,10 +84,15 @@
     <%= f.label "Dancer #12" %>
     <%= f.text_field :dancer12 %>
   </div>
+
   <div class="field">
     <%= f.label "Dancer #13" %>
     <%= f.text_field :dancer13 %>
   </div>
+</div>
+
+<div class="dancer2">
+
   <div class="field">
     <%= f.label "Dancer #14" %>
     <%= f.text_field :dancer14 %>
@@ -117,14 +121,38 @@
     <%= f.label "Dancer #20" %>
     <%= f.text_field :dancer20 %>
   </div>
+
+  <div class="field">
+    <%= f.label "Dancer #21" %>
+    <%= f.text_field :dancer21 %>
+  </div>
+  <div class="field">
+    <%= f.label "Dancer #22" %>
+    <%= f.text_field :dancer22 %>
+  </div>
+  <div class="field">
+    <%= f.label "Dancer #23" %>
+    <%= f.text_field :dancer23 %>
+  </div>
+  <div class="field">
+    <%= f.label "Dancer #24" %>
+    <%= f.text_field :dancer24 %>
+  </div>
+  <div class="field">
+    <%= f.label "Dancer #25" %>
+    <%= f.text_field :dancer25 %>
+  </div>
 </div>
+
+
+<div style="clear:both;padding-top:30px;">
 
 <h2>Number of Microphone</h2>
   <div class="field">
     <%= f.label "Microphones" %>
-    <%= f.text_field :mics %>
+    <%= f.select :mics, [1,2,3,4] %>
   </div>
-
+</div>
 
 <h2>Props Men</h2>
   <div class="props1">
@@ -172,7 +200,7 @@
     <%= f.text_area :comments %>
   </div>
 
-  <h2>Time and Performance Requirement</h2>
+  <h2>Time and Performance Requirement</h2><p>example. 0:00 - 0:15 - Random Play of Lights</p>
   <div class="props1">
    <div class="field">
     <%= f.label "Time #1" %>
@@ -297,10 +325,64 @@
      <div class="field">
     <%= f.label "Time #30" %>
     <%= f.text_field :time30 %>
+    <br /><br /><br />
   </div>
-  </div>
-
+  </div><br /><br />
+  <br /><br />
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Submit", :controller => 'comp_info', :action => 'submit_res' %>
   </div>
 <% end %>
+
+
+<div class="equipment">
+
+  <p>
+  <span style="font-size:1.2em;font-weight:bolder;">Technical Equipment (to be provided by PeopleSparx)</span><br /><br />    
+  <span style="font-weight:bolder;">STAGE BACKDROP</span> <br />
+  Framing of 3 – 9’x12’ LCD Screens 
+  <br />  <br />
+  <span style="font-weight:bolder;">VIDEO SYSTEM</span><br />
+  3 units   9’ x 12’ LCD Screens<br />
+  3 units   LCD Rear Projectors<br />
+  2 units   Camera System <br />
+  1 unit  DVD Harddisk Recording<br />
+  2 units   DVD Players<br />
+  1 lot                VGA Splitters & Switchers <br />                    
+<br /><br />
+  <span style="font-weight:bolder;">LIGHTS & SOUND SYSTEM</span><br />
+  Audio System<br />
+  6 units EAW Type AS690<br />
+  4 units RCF 4PRO6001<br />
+  6 units EV- Type Sub Scoop, Subwoofer, Powered, 600w<br />
+  4    units RCF 4PRO3002SMA, 12” Bi-Amp, Powered Speakers<br />
+  2 units Pioneer CDJ 100s CD Players<br />
+  1 unit  Stanton SA3, Professional Scratch Mixer (DJ Battle Mixer)<br />
+  1   unit 32 channels Digital Mixing Console<br />
+  1 lot Shure SM58 Wired Microphone<br />
+  4 units Sennheiser eW135 Handheld wireless UHF microphone<br />
+<br /><br />
+  <span style="font-weight:bolder;">Miscellaneous</span><br />
+  1 lot Microphone stands<br />
+  1 unit  Whirlwind 32x8x50m Microphone Snake Cable<br />
+  4 units Crank-up Mechanical Light Stand. 20’ hoist level<br />
+  1 lot Steel Scaffoldings<br />
+  1 lot Cables, Connectors & Wiring Materials<br />
+  1 unit  Power Distribution Unit, 120 amperes main breaker (3 phase)<br />
+  1 unit  Power Distribution Unit, 200 amperes main breaker (3 phase)<br />
+  5 units Communication Headsets<br />
+<br /><br />
+  <span style="font-weight:bolder;">Lighting and Effects</span><br />
+  24  units Par 64 lamps <br />
+  1 unit  DMX Dimmer Board Light Controller<br />
+  16  units Lumilites LED Par 3W<br />
+  2 units Jogen 1200 Fog Machine<br />
+  2 units Antari HZ100 Haze machine<br />
+  2 units Silverstar HMI 1200 Follow Spot<br />
+  2 units Jogen Molefay (flash) Audience Blinder Lights<br />
+  4 units Pearl River Big Dipper, Profile 575 moving heads<br />
+  1 unit  Magic DP1220 DMX 4kva X 12 channel dimmer pack<br />
+  1 unit  Avolites Pearl 2010 programmable light mixing console<br />
+
+  </p>
+</div>

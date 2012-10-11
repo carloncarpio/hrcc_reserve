@@ -5,3 +5,8 @@
 .dancer1, .props1{float:left;}
 
 .actions{clear:both;}
+
+.equipment{}
+.equipment p{font-size:.7em;width:30%;position:absolute;right:-50px;top:0;border-radius:5px;border:1px #ccc solid;padding:10px;}
+
+label{text-transform: uppercase;font-size:0.8em;}

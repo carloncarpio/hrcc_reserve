@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121009000818) do
+ActiveRecord::Schema.define(:version => 20121011035537) do
 
   create_table "comp_infos", :force => true do |t|
     t.string   "comp_name"
@@ -81,6 +81,11 @@ ActiveRecord::Schema.define(:version => 20121009000818) do
     t.string   "time30"
     t.datetime "created_at",    :null => false
     t.datetime "updated_at",    :null => false
+    t.string   "dancer21"
+    t.string   "dancer22"
+    t.string   "dancer23"
+    t.string   "dancer24"
+    t.string   "dancer25"
   end
 
 end

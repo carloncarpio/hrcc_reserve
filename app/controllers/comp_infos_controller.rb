@@ -44,6 +44,7 @@ class CompInfosController < ApplicationController
 
     respond_to do |format|
       if @comp_info.save
+        CompMailer.mysubmit(@comp_info).deliver
         format.html { redirect_to @comp_info, notice: 'Comp info was successfully created.' }
         format.json { render json: @comp_info, status: :created, location: @comp_info }
       else
@@ -80,4 +81,18 @@ class CompInfosController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  def submit_res
+    @comp_info = CompInfo.new
+    #@user = User.find(params[:id])
+    #@user = User.where(:id => params[:id])
+    #@vipbbsrsbb = Vipbbsrsbb.find(params[:company_email])
+    
+    CompMailer.mysubmit(@comp_info.comp_name).deliver
+    #@email = Vipbbsrsbb.all
+    #@comp = Vipbbsrsbb.all
+    #UserMailer.send_reserves(@email,@comp).deliver
+    redirect_to(:controller => 'comp_info',:action => 'index')
+  end
+
 end
