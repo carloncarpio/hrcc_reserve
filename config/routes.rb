@@ -3,7 +3,7 @@ Iconsreserve::Application.routes.draw do
 
   get "comp_infos/home"
 
-  match 'index' => 'comp_infos#index'
+  #match 'index' => 'comp_infos#index'
   match 'home' => 'comp_infos#home'
   match 'new' => 'comp_infos#new'
   match 'success' => 'comp_infos#success'
