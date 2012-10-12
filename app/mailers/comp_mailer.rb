@@ -5,7 +5,9 @@ class CompMailer < ActionMailer::Base
   def mysubmit(comp_name="")
   	@comp_name = comp_name
 
-  	mail(:to => 'hrccicons2012@peoplesparxph.com', :subject => "Registered", )  
+  	mail(:to => 'hrccicons2012@peoplesparxph.com',
+  		 :cc => 'carlo.carpio@capstone-ph.com',
+  		 :subject => "Company Performance Requirements", )  
 
     #mail(:to => 'carloncarpio@yahoo.com',
         #:cc => 'jing.almaden@peoplesparxph.com',
