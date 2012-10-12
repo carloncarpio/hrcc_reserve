@@ -2,7 +2,13 @@ class CompInfosController < ApplicationController
   # GET /comp_infos
   # GET /comp_infos.json
   def index
+    render :layout => "index_layout"
     @comp_infos = CompInfo.all
+
+  end
+
+  def home
+     @comp_infos = CompInfo.all
 
     respond_to do |format|
       format.html # index.html.erb
@@ -45,7 +51,7 @@ class CompInfosController < ApplicationController
     respond_to do |format|
       if @comp_info.save
         CompMailer.mysubmit(@comp_info).deliver
-        format.html { redirect_to @comp_info, notice: 'Comp info was successfully created.' }
+        format.html { redirect_to :controller => 'comp_infos', :action => 'success' }
         format.json { render json: @comp_info, status: :created, location: @comp_info }
       else
         format.html { render action: "new" }
@@ -93,6 +99,10 @@ class CompInfosController < ApplicationController
     #@comp = Vipbbsrsbb.all
     #UserMailer.send_reserves(@email,@comp).deliver
     redirect_to(:controller => 'comp_info',:action => 'index')
+  end
+
+  def success  
+    render :layout => "success"
   end
 
 end

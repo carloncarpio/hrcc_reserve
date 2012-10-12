@@ -10,3 +10,26 @@
 .equipment p{font-size:.7em;width:30%;position:absolute;right:-50px;top:0;border-radius:5px;border:1px #ccc solid;padding:10px;}
 
 label{text-transform: uppercase;font-size:0.8em;}
+
+img{text-align: center;}
+.logos{//width:70%;margin-top: -20px;margin-bottom:10px;margin-left:-50px;}
+
+.crowd{background-image:url('/images/crowd.jpg');}
+.img_tag1, .img_tag2, .img_tag3{display: inline-block;position:relative;width:308px;}
+.one,.two,.three{
+	//left: 30px;
+    position: absolute;
+    top: 100px;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    color:#fff;
+    text-align: center;
+    padding:20px;
+    text-shadow: 1px 1px #666;
+}
+.one a,.two a,.three a{color:#ff0000;text-decoration: none;text-shadow: 1px 1px #fff;}
+.one a:hover,.two a:hover,.three a:hover{background-color:#fff;text-decoration: none;}
+
+.thanks{text-align: center;margin-top: 20%;}
+.home{text-align: center;margin-top: 0%;cursor:pointer;}
+.home:hover{opacity:0.7;}

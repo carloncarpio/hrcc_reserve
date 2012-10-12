@@ -1,6 +1,13 @@
 Iconsreserve::Application.routes.draw do
   resources :comp_infos
 
+  get "comp_infos/home"
+
+  match 'index' => 'comp_infos#index'
+  match 'home' => 'comp_infos#home'
+  match 'new' => 'comp_infos#new'
+  match 'success' => 'comp_infos#success'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -50,7 +57,7 @@ Iconsreserve::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+  root :to => 'comp_infos#index'
 
   # See how all your routes lay out with "rake routes"
 
